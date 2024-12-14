@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-base);
+  background-color: var(--color-background-light);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  transition: background-color var(--transition-speed-medium) ease,
+    color var(--transition-speed-medium) ease;
+}
+
+/* Accessibility Enhancements */
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 10px;
+  color: var(--color-text-light);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-xs);
+}
+
+/* Header Styling */
+header {
+  background-color: var(--color-primary);
+  padding: var(--spacing-md);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0, 0.15);
+  background: var(--color-primary) url("../images/pexels-matthardy-1533720.jpg")
+    no-repeat left center/cover;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  background-color: transparent;
+  border: 2px solid var(--color-text-light);
+  color: var(--color-text-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-speed-fast) ease,
+    transform var(--transition-speed-fast) ease;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Main Layout */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-sm);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+/* Section Styles */
+section {
+  background-color: #fff;
+  border-radius: var(--border-radius-md);
+  padding: var(--border-radius-md);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-speed-fast) ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Benefit Articles */
+.benefit {
+  margin-bottom: var(--spacing-lg);
+}
+
+.benefit ul {
+  list-style-type: none;
+  padding-left: var(--spacing-sm);
+}
+
+.benefit ul li {
+  position: relative;
+  padding-left: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.benefit ul li::before {
+  content: "•";
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+}
+
+/* Calculation Section */
+#calc-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+#calc-section input,
+#calc-section button {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: 2px solid var(--color-primary);
+  transition: box-shadow var(--transition-speed-fast) ease,
+    border-color var(--transition-speed-fast) ease;
+}
+
+#calc-section button {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#calc-section button:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Container */
+.container-result {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background-color: rgba(0, 86, 179, 0.1); /* Primary color with transparency */
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+}
+
+.container-result p {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/* Dark Mode Enhancements */
+body.dark-mode {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+}
+
+body.dark-mode header {
+  background-color: var(--color-secondary);
+}
+
+body.dark-mode section {
+  background-color: #2c3e50;
+  color: var(--color-text-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .benefit ul li::before {
+  color: var(--color-heighlight);
+}
+
+body.dark-mode #calc-section input,
+body.dark-mode #calc-section button {
+  border-color: var(--color-text-light);
+}
+
+body.dark-mode #calc-section button:hover {
+  background-color: var(--color-heighlight);
+}
+
+body.dark-mode .container-result {
+  border-left-color: var(--color-heighlight);
+}
+
+body.dark-mode .container-result p {
+  color: var(--color-text-light);
+}
+
+body.dark-mode #reflection {
+  color: var(--color-background-light);
+}
+
+body.dark-mode #reflection strong {
+  color: var(--color-heighlight);
+}
+
+body.dark-mode #water-chart {
+  max-height: 300px;
+  width: 100%;
+  background-color: #2c3e50;
+}
+
+/* Animations and Transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Chart Section */
+#chart-section {
+  text-align: center;
+}
+
+#water-chart {
+  max-height: 300px;
+  width: 100%;
+}
+
+/* Reflection Section Enhancements */
+#reflection {
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+#reflection strong {
+  color: var(--color-primary);
+  font-style: normal;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+}
+
+footer a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color var(--transition-speed-fast) ease;
+}
+
+footer a:hover {
+  color: var(--color-heighlight);
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Variables */
+:root {
+  /* Colors */
+  --color-primary: #2789f3;
+  --color-secondary: #00755c;
+  --color-background-light: #f8f9fa;
+  --color-background-dark: #121827;
+  --color-text-primary: #023047;
+  --color-text-light: #fff;
+  --color-text-muted: #6c757d;
+  --color-heighlight: #ffc107;
+
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Spacing and Sizing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+
+  /* Transitions and Animations */
+  --transition-speed-fast: 0.2s;
+  --transition-speed-medium: 0.3s;
+
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+}
+
+/* Modern Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

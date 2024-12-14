@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubra os 5 principais benefícios da água para a saúde."
+    />
+    <meta name="author" content="Brian Muniz" />
+    <meta name="keywords" content="agua, beneficios, hidratação" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="5 Principais Benefícios da Água" />
+    <meta
+      property="og:description"
+      content="Descubra os 5 principais benefícios da água para a saúde."
+    />
+    <meta property="og:image" content="https://i.imgur.com/odz2t7o.jpeg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Benefícios Da Água" />
+    <meta property="og:url" content="#" />
+    <title>Benefícios Da Água</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./src/images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./src/images/favicon.svg" />
+    <link rel="shortcut icon" href="./src/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/images/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./src/images/site.webmanifest" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS Reset e Estilos Principais -->
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Benefícios da Água</h1>
+        <button id="theme-toggle" aria-label="Alterar Tema">
+          <i class="fas fa-adjust"></i> Alternar Tema
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção Principal -->
+      <section id="benefits">
+        <h2>Benefícios da Hidratação</h2>
+        <article class="benefit">
+          <h2>Hidratação Fundamental</h2>
+          <p>
+            A água protege articulações, regula temperatura corporal e
+            transporta nutrientes essenciais para todas as células. Compõe 60%
+            do corpo humano, sendo crucial para manter sistemas biológicos
+            funcionando perfeitamente.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <h2>Energia e Desempenho</h2>
+          <ul>
+            <li>Melhora resistência física</li>
+            <li>Aumenta tempo de reação</li>
+            <li>Aprimora coordenação motora</li>
+            <li>Potencializa concentração mental</li>
+          </ul>
+          <p>Previne fadiga e cãibras musculares.</p>
+        </article>
+
+        <article class="benefit">
+          <h2>Digestão Eficiente</h2>
+          <ul>
+            <li>Auxilia processamento de alimentos</li>
+            <li>Melhora absorção de nutrientes</li>
+            <li>Facilita movimento intestinal</li>
+            <li>Previne constipação</li>
+          </ul>
+          <p>Fundamental para um metabolismo saudável.</p>
+        </article>
+
+        <article class="benefit">
+          <h2>Controle de Peso e Saúde da Pele</h2>
+          <ul>
+            <li>Aumenta sensação de saciedade</li>
+            <li>Acelera metabolismo</li>
+            <li>Mantém elasticidade da pele</li>
+            <li>Previne envelhecimento precoce</li>
+          </ul>
+        </article>
+
+        <article class="benefit">
+          <h2>Função Cognitiva</h2>
+          <ul>
+            <li>Melhora concentração</li>
+            <li>Aprimora memória</li>
+            <li>Aumenta clareza mental</li>
+            <li>Equilibra emoções</li>
+          </ul>
+          <br />
+          <p>Cada gole é um investimento na sua saúde integral! 💧</p>
+        </article>
+      </section>
+
+      <!-- Seção Secundária: Cálculo da Quantidade de Água -->
+      <section id="calc-section">
+        <h2>Descubra a sua Quantidade Ideal de Água</h2>
+        <form action="#" method="get">
+          <label for="weight">Digite seu Peso (kg): </label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Ex: 70"
+            step="1"
+            required
+          />
+          <button type="button" id="calc-btn">Calcular</button>
+        </form>
+        <div class="container-result">
+          <p id="result"></p>
+        </div>
+      </section>
+
+      <!-- Seção do Gráfico -->
+      <section id="chart-section">
+        <h2>Benefícios em Destaque</h2>
+        <canvas id="water-chart" width="400" height="200"></canvas>
+      </section>
+
+      <!-- Seção de Reflexão Pessoal -->
+      <section id="reflection">
+        <h2>Bônus - Reflexão Pessoal</h2>
+        <p>
+          Ao considerar esses benefícios, é importante refletir sobre nossos
+          <strong>hábitos</strong> de consumo de água.
+        </p>
+        <p>
+          Muitas vezes, <strong>subestimamos</strong> a importância desse
+          líquido <strong>vital</strong> em nossas
+          <strong>vidas</strong> diárias. Que tal reservar um momento para
+          pensar sobre como podemos incorporar conscientemente mais água em
+          nossa <strong>rotina</strong>?
+        </p>
+        <p>
+          Pequenas mudanças, como levar uma garrafa de água consigo ou definir
+          <strong>lembretes</strong> para <strong>beber</strong>
+          <strong>água</strong> ao longo do dia, podem fazer uma grande
+          <strong>diferença</strong>.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Foto de Matt Hardy:
+          <a
+            href="https://www.pexels.com/pt-br/foto/corpo-d-agua-sob-ceus-azuis-e-brancos-1533720/"
+            >https://www.pexels.com/pt-br/foto/corpo-d-agua-sob-ceus-azuis-e-brancos-1533720/</a
+          >
+        </p>
+      </footer>
+
+      <script src="./src/js/main.js"></script>
+    </main>
+  </body>
+</html>

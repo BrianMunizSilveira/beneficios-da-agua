@@ -1,0 +1,42 @@
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  body {
+    background-size: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #00a2ff;
+    background-color: #36363698;
+    border-radius: var(--spacing-sm);
+    padding: var(--spacing-sm);
+  }
+  h2,
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.9rem;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  #calc-section input,
+  #calc-section button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
